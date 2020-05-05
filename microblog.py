@@ -1,0 +1,1 @@
+from app import app # from the package app (as whole), importing the variable class instance of Flask, called app. As defined in __init__.py
