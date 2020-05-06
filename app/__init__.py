@@ -9,5 +9,6 @@ app.config.from_object(Config) # Tells Flask to read and apply configuration fro
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 login = LoginManager(app)
+login.login_view = 'login'
 
 from app import routes, models # ref to app here is referring to directory app. Importing routes.py
