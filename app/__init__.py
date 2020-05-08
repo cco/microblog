@@ -11,4 +11,4 @@ migrate = Migrate(app, db)
 login = LoginManager(app)
 login.login_view = 'login'
 
-from app import routes, models # ref to app here is referring to directory app. Importing routes.py
+from app import routes, models, errors # ref to app here is referring to directory app. Importing routes.py
